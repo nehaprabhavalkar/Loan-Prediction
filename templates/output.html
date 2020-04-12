@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		
+		<h2>Loan Prediction Website</h2>
+		
+	</div>
+	</header>
+	
+
+	<h3> Results </h3>
+		
+	{% if prediction == 1%}
+	<h3 style="color:green;">Yes. Loan can be granted.</h3>
+	{% elif prediction == 0%}
+	<h3 style="color:red;">No. Loan cannot be granted.</h3>
+	{% endif %}
+
+	
+</body>
+</html>
