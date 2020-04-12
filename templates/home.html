@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+	
+		<h2>Loan Prediction Website</h2>
+		
+	</div>
+	</header>
+
+	<div class="container">
+		
+		<br>
+		<form action="http://127.0.0.1:5000/predict" method="POST">
+
+		<label for="lid">Loan ID</label><br>
+  		<input type="text" name="lid"><br>
+
+  		<label for="gender">Gender</label><br>
+  		<input type="radio" name="gender" value="Male">
+  		<label for="gen">Male</label><br>
+  		<input type="radio" name="gender" value="Female">
+  		<label for="gen">Female</label><br>
+
+  		<label for="marriage">Married</label><br>
+  		<input type="radio" name="married" value="Yes">
+  		<label for="yes">Yes</label><br>
+  		<input type="radio" name="married" value="No">
+  		<label for="no">No</label><br>
+
+  		<label for="dep">Dependents</label><br>
+  		<input type="text" name="dep"><br>
+
+  		<label for="edu">Education</label><br>
+  		<input type="text" name="edu"><br>
+
+  		<label for="selfemp">Self Employed</label><br>
+  		<input type="radio" name="selfemp" value="Yes">
+  		<label for="yes">Yes</label><br>
+  		<input type="radio" name="selfemp" value="No">
+  		<label for="no">No</label><br>
+
+  		<label for="appinc">Applicant Income</label><br>
+  		<input type="text" name="appinc"><br>
+
+  		<label for="coapp">Coapplicant Income</label><br>
+  		<input type="text" name="coapp"><br>
+
+  		<label for="loan">Loan Amount</label><br>
+  		<input type="text" name="loan"><br>
+
+  		<label for="loanterm">Loan Amount Term</label><br>
+  		<input type="text" name="loanterm"><br>
+
+  		<label for="credhist">Credit History</label><br>
+  		<input type="text" name="credhist"><br>
+
+  		<label for="proparea">Property Area</label><br>
+  		<input type="text" name="proparea"><br> <br>
+
+		<input type="submit" class="btn-info" value="Predict">
+	 
+		
+	</form>
+		
+	</div>
+
+	
+
+</body>
+</html>
